@@ -1,7 +1,7 @@
 const mongoose = require('mongoose')
 
 // A api de promise do mongoose está depreciada... sendo assim
-// utilizo a parte de Promises específica do próprio node
+// utilizo a parte de Promises específica do próprio Node.
 mongoose.Promise = global.Promise
 module.exports = mongoose.connect('mongodb://localhost/mymoney', { useNewUrlParser: true })
 
